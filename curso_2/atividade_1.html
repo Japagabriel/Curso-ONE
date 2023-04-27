@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width = "1920"  height="1080"> </canvas>
+    <script>
+        var screen = document.querySelector('canvas');
+        var pincel = screen.getContext('2d');
+
+        pincel.fillStyle = "green";
+        pincel.fillRect(0,0, 640,920);
+        pincel.fillStyle = "red";
+        pincel.fillRect(1280,0, 1920,920);
+
+        pincel.fillStyle = 'cyan';
+        pincel.beginPath();
+        pincel.arc(960,460, 300, 0, 2*3.14);
+        pincel.fill();
+
+
+    </script>
+</body>
+</html>
