@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="int" class="num1" placeholder="Digite um valor">
+    <hr>
+    <button>Compare Valores: </button>
+
+    <script> //       ===== não está funcionando!! =====
+        function sorteia(){
+            return Math.round(Math.random()* 10);
+        }
+        
+        function qtdSorNumeros (qtd){
+            var secret = [];
+            var num = 1;
+            while (num <= qtd){
+                var numAle = sorteia();
+                
+                if (numAle !== 0){
+                    var achou = false;
+                    
+                    for(var posi = 0; posi < secret.length; posi++){
+                        if (secret[posi] === numAle){
+                            achou = true;
+                            break;                
+                        }
+                    }
+                    if (achou = false){     
+                        secret.push(numAle);
+                        num++;
+                    }
+                }
+            }
+            return secret;
+        }
+
+
+        var numsort = qtdSorNumeros(3)
+        var input = document.querySelector(".num1");
+        input.focus();
+
+
+        function verifica(){
+            var achou = false;
+            for (var posi = 0; posi < numsort.length;posi++){
+                if (input.value == numsort[posi]){
+                    alert("Você ACERTOU! ")
+                    achou = true;
+                    break;
+                }
+            }
+            if (achou == false){
+                alert("você ERROU!")
+            }
+            input.value = "";
+            input.focus();
+        }
+        var button = document.querySelector("button");
+        button.onclick= verifica;
+    </script>
+</body>
+</html>
