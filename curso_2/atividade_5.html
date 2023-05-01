@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        var screen = document.querySelector("canvas");
+        var brush = screen.getContext("2d");
+        
+        function drawArc (x,y,ray, cor){
+            brush.fillStyle = cor;
+            brush.beginPath();
+            brush.arc(x, y, ray, 0, 2* Math.PI);  
+            brush.fill();  
+        }
+
+        function clearScreen(){
+            brush.clearRect(0,0,600,400);
+        }
+        var xa = 20;
+        var xe = 80;
+        
+        function reloadScreen(){ 
+            clearScreen();
+            brush.fillStyle = "cyan";
+            brush.fillRect(0,0,600,400);
+
+            drawArc(xa,20,30, "Pink");
+            drawArc(xe,80,40, "Gray");
+            xa++;
+            xe++;
+        }
+
+        setInterval(reloadScreen,20);
+
+    </script>
+</body>
+</html>
