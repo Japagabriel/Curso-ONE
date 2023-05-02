@@ -1,0 +1,41 @@
+
+#img1 {
+    width: 100%;
+}
+#img2{
+    width: 50%;
+    
+}
+.main-tittle{
+    padding-left: 20px;
+}
+.principal{
+    background: #AAAAAA;
+    padding: 30px;
+}
+.text-center{
+    text-align: center;
+}
+p { 
+    text-Align: Center;
+    font-size: 20px;
+}
+
+.itens{
+    font-style: italic;
+    
+}
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.beneficios{
+    background: #CCCCCC;
+    padding: 20px;
+}
+
+
+
