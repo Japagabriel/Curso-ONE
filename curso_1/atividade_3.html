@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="int" class="num1" placeholder="Digite um valor"><br /><table> 
+    <input type="int" class="num2" placeholder="Digite outro valor"> 
+    
+    <button>Compare Valores: </button>
+
+    <script>
+        var input = document.querySelector(".num1");
+        var input1 = document.querySelector(".num2");
+        input.focus();
+        function verifica(){
+            var soma = parseInt(input.value) + parseInt(input1.value)
+            alert("a soma é: " + soma)
+            input.value = "";
+            input1.value = "";
+            input.focus();
+        }
+        var button = document.querySelector("button");
+        button.onclick   = verifica;
+
+
+    </script>
+    
+</body>
+</html>
