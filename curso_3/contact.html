@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="reset.css">
+    <link rel ="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="imagens/">
+</head>
+<body>
+    <header>
+        <div class ="box">
+            <h1><img src="imagens/logo.png" alt=""></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="">
+            <div>
+                <label for="nomeCompleto">Nome Completo</label>
+                <input type="text" id="nomeCompleto" class="input-main" placeholder="Digite aqui.">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="input-main" placeholder="Digite aqui.">
+
+                <label for="dataNasc">Data de nascimento</label>
+                <input type="date" class="input-main" id="dataNasc">
+
+                <label for="cell">Telefone</label>
+                <input type="text" class="input-main" id="cell">
+
+                <label for="mensage">Mensagem</label>
+                <textarea name="mensage" id="mensage" class="input-main" cols="46" rows="10"></textarea>
+            </div>
+            <div class = "form-select">
+                <p>Qual modo de conversa você prefere ?</p>
+                <label for="email"><input type="radio" name="contact" value ="wmail" id=ra-Email">E-mail</label>
+                
+                <label for="telefone"><input type="radio" name="contact" value ="telefone" id="ra-telefone">Telefone</label>
+                
+                <label for="whatsapp"><input type="radio" name="contact" value ="whatsapp" id="ra-whatsapp">Whatsapp</label>
+                
+            </div>
+
+            <div class="select">
+                <p>Qual horário gostaria de ser atendido ?</p>
+                <select name="" id="">
+                    <option value="">Opção</option>
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+                
+            </div>
+            <label for="notify" class="checkbox"><input type="checkbox" name="" id="notify">Gostaria de receber nossas notificações ?</label>
+            
+            <input type="submit" value="enviar" class="enviar">
+        </form>
+
+    </main>
+    <footer class = "base-board">
+        <img src="imagens/logo-branco.png" >
+        <p> &copy;Copyright Barbearia Alura - 2023.1</p>
+    </footer>
+</body>
+</html>

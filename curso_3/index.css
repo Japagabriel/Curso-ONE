@@ -1,0 +1,96 @@
+header{
+    background: #CCCCCC ;
+    padding: 20px 0;
+}
+
+.box{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #0f9287;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: lightgreen;
+}
+/*          index                                             */
+#img1 {
+    width: 100%;
+}
+#img2{
+    width: 50%;
+    
+}
+.main-tittle{
+    padding-left: 20px;
+}
+.principal{
+    background: #AAAAAA;
+    padding: 30px;
+}
+.text-center{
+    text-align: center;
+}
+p { 
+    text-Align: Center;
+    font-size: 20px;
+}
+
+.itens{
+    font-style: italic;
+    
+}
+
+.item-p{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.beneficios{
+    background: #CCCCCC;
+    padding: 20px;
+}
+
+/*                Parte do Rodapé           */
+
+
+
+footer {
+    text-align: center;
+    background: url("imagens/bg.jpg");
+    padding: 40px 0;
+}
+
+.base-board p {
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 10px;
+}
+
+
+
